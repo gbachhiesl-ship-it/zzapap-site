@@ -1,16 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>zZapaP</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>zZapaP — Minimal · Honest · Different</title>
+  <meta name="description" content="Wear the Statement. Not just a brand. zZapaP — minimal, honest, different." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="logo">zZapaP</div>
-    <h1>Focus on your own game.</h1>
-    <p>Minimal. Honest. No guru show.<br>Trading ohne Zirkus.</p>
-  </div>
+  <header class="topbar container">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 100 100" width="28" height="28" role="img">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#8BFF58"/>
+              <stop offset="1" stop-color="#64FFDA"/>
+            </linearGradient>
+          </defs>
+          <path d="M50 5 92 28 92 72 50 95 8 72 8 28Z" fill="none" stroke="url(#g)" stroke-width="6" stroke-linejoin="round"/>
+          <circle cx="50" cy="50" r="14" fill="none" stroke="url(#g)" stroke-width="6"/>
+        </svg>
+      </span>
+      <span class="wordmark">zZapaP</span>
+      <span class="tag">Minimal · Honest · Different</span>
+    </div>
+
+    <nav class="lang">
+      <button class="chip active">EN</button>
+      <button class="chip">DE</button>
+      <button class="chip">ES</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>
+          Wear the <span class="accent">Statement.</span><br/>
+          Not just a brand.<br/>
+          <span class="accent brand-name">zZapaP.</span>
+        </h1>
+        <p class="sub">
+          A small, bold label from Europe. Clean design. Zero guru show. Built for kids, teens and the free at heart.
+        </p>
+        <div class="cta">
+          <a href="#pieces" class="btn primary">See the style →</a>
+          <a href="#partner" class="btn ghost">Partner with us</a>
+        </div>
+        <p class="disclaimer">No circus. No guru show. Just style.</p>
+      </div>
+
+      <div class="hero-cards">
+        <article class="card">
+          <h3 class="card-title">Wristband</h3>
+          <div class="dial"><span></span></div>
+          <p class="muted">zZapaP band</p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">T‑Shirt</h3>
+          <div class="tile"><span class="tile-logo">zZapaP</span></div>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Sticker</h3>
+          <div class="tile">
+            <svg viewBox="0 0 100 100">
+              <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8BFF58"/><stop offset="1" stop-color="#64FFDA"/></linearGradient></defs>
+              <path d="M50 5 92 28 92 72 50 95 8 72 8 28Z" fill="none" stroke="url(#g2)" stroke-width="6" stroke-linejoin="round"/>
+              <circle cx="50" cy="50" r="14" fill="none" stroke="url(#g2)" stroke-width="6"/>
+            </svg>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="pieces" class="pieces container">
+      <h2>Core Pieces</h2>
+      <ul class="grid">
+        <li class="piece"><span class="badge">New</span><strong>Band v1</strong><em>Matte black · neon edge</em></li>
+        <li class="piece"><strong>Tee 001</strong><em>Oversized · heavy cotton</em></li>
+        <li class="piece"><strong>Sticker Set</strong><em>Waterproof · fade‑proof</em></li>
+      </ul>
+    </section>
+
+    <section id="partner" class="partner container">
+      <h2>Partner with zZapaP</h2>
+      <p>Small shops, schools, clubs — let’s build custom drops with clean design and real substance.</p>
+      <a class="btn primary" href="mailto:hello@zzapap.com">hello@zzapap.com</a>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div>© <span id="y"></span> zZapaP · Minimal · Honest · Different</div>
+    <a href="#">Imprint</a>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
